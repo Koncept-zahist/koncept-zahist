@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <link rel="stylesheet" href="source/styles/mycss.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проект Послуг Житлових Комплексів</title>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('source/images/fon.jpg') no-repeat center center fixed;
+
+    background-size: cover;
+}
+
+#services {
+    background-image: url("source/images/security\ s1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 20px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+    max-width: 1200px;
+    background-color: rgba(0, 0, 0, 0.582); /* Полупрозрачный затемняющий фон */
+    background-blend-mode: darken; /* Применяет затемнение изображения */
+}
+#services .logo {
+    position: absolute; /* Используем абсолютное позиционирование */
+    top: 10px; /* Отступ сверху */
+    right: 10px; /* Отступ справа */
+    z-index: 10; /* Чтобы логотип был поверх других элементов */
+}
+
+</style>
+<header>
+    <div class="logo ру">
+        <img src="source/images/logo.png" alt="Концепт Захист">
+    </div>
+  
+    <nav>
+        <a href="#services">Послуги</a>
+        <a href="#about">Інструкція</a>
+        <a href="#contacts">Контактна інформація</a>
+        <a href="tel:+380984622709">+380978800688</a>
+    </nav>
+</header>
+
+<section id="services" class="section-content left-aligned">
+    <div class="logo">
+        <img src="source/images/logo.png" alt="Logo">
+    </div>
+    <h3 class="serv">ТОВ "Концепт-Захист"</h3>
+    <div class="serv-text">
+        <p class="propis-text">ТОВ "Концепт-Захист" - ми надаємо великий перелік послуг для комфортного та безпечного життя, а саме:</p>
+        <p class="propis-text">- Охорона громадського порядку;</p>
+        <p class="propis-text">- Користування шлагбаумами;</p>
+        <p class="propis-text">- Користування домофонними приладами;</p>
+        <p class="propis-text">- Цілодобовий відеонагляд за масивами;</p>
+        <p class="propis-text">- Пультова централізована охорона об'єктів;</p>
+        <p class="propis-text">- Охорона паркувального майданчика;</p>
+    </div>
+</section>
+
+<section id="about" class="section-content left-aligned">
+    <h3>Інструкція</h3>
+    <p>- Ознайомитися з основним договором за Вашою адресою</p>
+    <p>- Вибрати та завантажити необхідний бланк заяви на приєднання до послуг за вашою адресою</p>
+    <p>- Заповнити бланк заяви необхідною інформацією</p>
+    <p>- Заповнений бланк відправити на електрону адресу: info@konceptzahist.com або роздрокувати та принести за адресою: м.Вишневе, вул.Молодіжна, буд.22, 
+        Приміщення 21, офіс 26;	</p>
+    <p>- Підійти до офісу за адресою вказаной у контактних даних щоб підписати заяву </p>
+    <p>- У випадку якщо самостійно заповнити заяву немає можливості, у Вас є можливість заповнити її з менеджером у офісі</p>
+</section>
+
+
+
+<section class="dogovir section-content">
+    <h3>Основний договір</h3>
+    <p>Перед заповненням бланку - ознайомитися з основним договором</p>
+    <div class="dogovir-buttons">
+        <a href="source/files/Договір_Концепт_Сакура.docx" class="download-button" download>Договір: "ЖК Сакура"</a>
+        <a href="source/files/Договір_Концепт_Добре місто.docx" class="download-button" download>Договір: "ЖК Добре місто"</a>
+        <a href="source/files/Договір_Концепт_М16.docx" class="download-button" download>Договір: "ЖК Добре місто 2"</a>
+        <a href="source/files/Договір_Концепт_Чорновола_Весняний.docx" class="download-button" download>Договір: "ЖК Чорновола" / "ЖК Весняний"</a>
+    </div>
+</section>
+
+<section class="main-content">
+    <!-- Раздел с ЖК -->
+    <div class="complex">
+        <h3>"ЖК Сакура"</h3>
+        <img src="source/images/sakura1.jpg" alt="Сакура">
+        <p>вул. Єдності: 2, 4, 5, 6, 6а</p>
+        <a href="source/files/fo_С-1.docx" class="download-button" download>Завантажити бланк заяви для фізичних осіб</a>
+        <a href="source/files/yo_С-1.docx" class="download-button" download>Завантажити бланк заяви для юридичних осіб</a>
+    </div>
+    <div class="complex">
+        <h3>"ЖК Добре місто"</h3>
+        <img src="source/images/pk1.jpg" alt="Добре місто">
+        <p>вул. М.Приймаченко: 27,23а,23б </p>
+        <p>вул. Молодіжна: 14,16,16а,18,20,24,28,32,32а</p>
+        <a href="source/files/fo_ДМ-1.docx" class="download-button" download>Завантажити бланк заяви для фізичних осіб</a>
+        <a href="source/files/yo_ДМ-1.docx" class="download-button" download>Завантажити бланк заяви для юридичних осіб</a>
+    </div>
+    <div class="complex">
+        <h3>"ЖК Добре місто 2"</h3>
+        <img src="source/images/pk2.jpg" alt="Добре місто 2">
+        <p>вул. Машинобудівників 16,18</p>
+        <a href="source/files/fo_М16-1.docx" class="download-button" download>Завантажити бланк заяви для фізичних осіб</a>
+        <a href="source/files/yo_М16-1.docx" class="download-button" download>Завантажити бланк заяви для юридичних осіб</a>
+    </div>
+    <div class="complex">
+        <h3>"ЖК Чорновола"</h3>
+        <h3>"ЖК Весняний"</h3>
+        <img src="source/images/chornovol.jpg" alt="Чорновола">
+        <p>вул. Чорновола: 48б</p>
+        <p>пров. Весняний: 1а,2</p>
+        <a href="source/files/fo_ЧВ-1.docx" class="download-button" download>Завантажити бланк заяви для фізичних осіб</a>
+        <a href="source/files/yo_ЧВ-1.docx" class="download-button" download>Завантажити бланк заяви для юридичних осіб</a>
+    </div>
+</section>
+
+
+<section id="contacts" class="section-content left-aligned">
+    <h3>Контактна інформація</h3>
+    <div class="contact-details">
+        <div class="contact-info">
+            <p><strong>Адреса:</strong> 08133, м.Вишневе, вул.Молодіжна, буд.22, 
+                Приміщення 21, офіс 26;	</p>
+            <p><strong>Контактна особа:</strong> Орел Віктор Олександрович</p>
+            <p><strong>Телефон:</strong> <a href="tel:+380984622709">+380978800688</a></p>
+            <p><strong>Електронна пошта:</strong> info@konceptzahist.com</p>
+        </div>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.690887220962!2d30.380734894876895!3d50.38332053628856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfdd7bbad137%3A0x7b2d6f37b85c93f5!2z0J_QsNGA0Log0KbQtdC90YLRgCDQmtC40ZfQstGB0LosIDEwLCDQnNC-0YHQutCy0LAsIDM0MDEy!5e0!3m2!1suk!2sua!4v1619713765677!5m2!1suk!2sua" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
